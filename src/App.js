@@ -10,6 +10,7 @@ import NotFound from './components/NotFound';
 import AddProduct from './page/AddProduct';
 import Home from './page/Home';
 import Cart from './page/Cart';
+import LogicTest from './page/LogicTest';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/not-found' Component={NotFound} />
           <Route path='/cart' Component={Cart} />
           <Route path='/addProduct' Component={AddProduct} />
+          <Route path='/logictest' Component={LogicTest} />
           <Route path='/' Component={Home} />
           <Route path="*" element={<Navigate to ="/not-found" />}/>
         </Routes>

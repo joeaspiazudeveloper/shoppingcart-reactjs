@@ -55,6 +55,14 @@
       "amount": "14",
       "image": "https://imgs.search.brave.com/evSRbcQAYXNmPczN41SHIQXnKknh6XsyxDF_7l2aXds/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5oc3dzdGF0aWMu/Y29tL2V5SmlkV05y/WlhRaU9pSmpiMjUw/Wlc1MExtaHpkM04w/WVhScFl5NWpiMjBp/TENKclpYa2lPaUpu/YVdaY0x6SmlkWGt0/WjJWdVpYSnBZeTB4/TG1wd1p5SXNJbVZr/YVhSeklqcDdJbkps/YzJsNlpTSTZleUoz/YVdSMGFDSTZPREk0/ZlgxOQ",
       "desc": "Description for Carrot"
+    },
+    {
+      "id": 8,
+      "name": "salt",
+      "price": "3",
+      "amount": "5",
+      "image": "https://imgs.search.brave.com/evSRbcQAYXNmPczN41SHIQXnKknh6XsyxDF_7l2aXds/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5oc3dzdGF0aWMu/Y29tL2V5SmlkV05y/WlhRaU9pSmpiMjUw/Wlc1MExtaHpkM04w/WVhScFl5NWpiMjBp/TENKclpYa2lPaUpu/YVdaY0x6SmlkWGt0/WjJWdVpYSnBZeTB4/TG1wd1p5SXNJbVZr/YVhSeklqcDdJbkps/YzJsNlpTSTZleUoz/YVdSMGFDSTZPREk0/ZlgxOQ",
+      "desc": "Description for salt"
     }
   ]
 }

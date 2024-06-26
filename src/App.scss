@@ -390,3 +390,13 @@ $button-font-color: #2b2b2b;
     color: red;
   }
 }
+// Logic Test
+.logic-test-container {
+  margin: 1rem;
+  pre code {
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    margin: 3rem 0;
+  }
+}

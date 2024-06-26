@@ -60,7 +60,7 @@ function Cart() {
           <div className="titles">
             <h3 className="product-title">Product</h3>
             <h3 className="price">Price</h3>
-            {/* <h3 className="quantity">Quantity</h3> */}
+            <h3 className="quantity">Quantity</h3>
             <h3 className="total">Total</h3>
           </div>
           <div className="cart-items">
@@ -80,13 +80,13 @@ function Cart() {
                     </div>
                   </div>
                   <div className="cart-product-price">${cartItem.price}</div>
-                  {/* <div className="cart-product-quantity">
-                    <button onClick={() => handleDecreaseCart(cartItem)}>
+                  <div className="cart-product-quantity">
+                    <button style={{display: 'none'}} onClick={() => handleDecreaseCart(cartItem)}>
                       -
                     </button>
                     <div className="count">{cartItem.cartQuantity}</div>
-                    <button onClick={() => handleIncreaseCart(cartItem)}>+</button>
-                  </div> */}
+                    <button style={{display: 'none'}} onClick={() => handleIncreaseCart(cartItem)}>+</button>
+                  </div>
                   <div className="cart-product-total-price">
                     ${cartItem.price * cartItem.cartQuantity}
                   </div>

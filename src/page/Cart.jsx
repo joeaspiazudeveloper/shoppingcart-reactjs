@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart, clearCart, decreaseCart, getTotals, removeFromCart } from "../features/cartSlice";
+import { decreaseProductAmount, increaseProductAmount } from "../features/productsSlice";
 
 function Cart() {
   const cart = useSelector((state) => state.cart);
@@ -18,14 +19,16 @@ function Cart() {
 
   const handleDecreaseCart = (cartItem) => {
     dispatch(decreaseCart(cartItem));
+    dispatch(increaseProductAmount(cartItem));
   }
 
   const handleIncreaseCart = (cartItem) => {
-    dispatch(addToCart(cartItem))
+    dispatch(addToCart(cartItem));
+    dispatch(decreaseProductAmount(cartItem));
   }
 
   const handleClearCart = () => {
-    dispatch(clearCart())
+    dispatch(clearCart());
   }
   return (
     <div className="cart-container">

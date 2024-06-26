@@ -59,12 +59,13 @@ const productsSlice = createSlice({
             );
             if(findIndex >= 0) {
                 state.items[findIndex].amount -= 1;
-                toast.warning(`Amount Product ${action.payload.name} increase successfuly to
-                ${state.items[findIndex].amount}`, {
-                    position: "bottom-left",
-                });
+                // toast.warning(`Amount Product ${action.payload.name} increase successfuly to
+                // ${state.items[findIndex].amount}`, {
+                //     position: "bottom-left",
+                // });
             } else {
-                toast.error(`Product ${action.payload.name} increased ammount failed`, {
+                console.log('some error occurs increasing amount');
+                toast.error(`Product ${action.payload.name} increased amount failed`, {
                     position: "bottom-left",
                 });
             }

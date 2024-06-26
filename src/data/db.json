@@ -34,27 +34,27 @@
     },
     {
       "id": 5,
-      "name": "new product one",
-      "price": "15",
+      "name": "Tomatoes",
+      "price": "4",
       "amount": "20",
       "image": "https://imgs.search.brave.com/evSRbcQAYXNmPczN41SHIQXnKknh6XsyxDF_7l2aXds/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5oc3dzdGF0aWMu/Y29tL2V5SmlkV05y/WlhRaU9pSmpiMjUw/Wlc1MExtaHpkM04w/WVhScFl5NWpiMjBp/TENKclpYa2lPaUpu/YVdaY0x6SmlkWGt0/WjJWdVpYSnBZeTB4/TG1wd1p5SXNJbVZr/YVhSeklqcDdJbkps/YzJsNlpTSTZleUoz/YVdSMGFDSTZPREk0/ZlgxOQ",
-      "desc": "Description for new product one"
+      "desc": "Description for Tomatoes"
     },
     {
       "id": 6,
-      "name": "new product two",
-      "price": "100",
-      "amount": "150",
+      "name": "pinaple",
+      "price": "10",
+      "amount": "15",
       "image": "https://imgs.search.brave.com/evSRbcQAYXNmPczN41SHIQXnKknh6XsyxDF_7l2aXds/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5oc3dzdGF0aWMu/Y29tL2V5SmlkV05y/WlhRaU9pSmpiMjUw/Wlc1MExtaHpkM04w/WVhScFl5NWpiMjBp/TENKclpYa2lPaUpu/YVdaY0x6SmlkWGt0/WjJWdVpYSnBZeTB4/TG1wd1p5SXNJbVZr/YVhSeklqcDdJbkps/YzJsNlpTSTZleUoz/YVdSMGFDSTZPREk0/ZlgxOQ",
-      "desc": "Description for new product two"
+      "desc": "Description for pinaple"
     },
     {
       "id": 7,
-      "name": "Tomatoes",
-      "price": "40",
-      "amount": "200",
+      "name": "Carrot",
+      "price": "12",
+      "amount": "14",
       "image": "https://imgs.search.brave.com/evSRbcQAYXNmPczN41SHIQXnKknh6XsyxDF_7l2aXds/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5oc3dzdGF0aWMu/Y29tL2V5SmlkV05y/WlhRaU9pSmpiMjUw/Wlc1MExtaHpkM04w/WVhScFl5NWpiMjBp/TENKclpYa2lPaUpu/YVdaY0x6SmlkWGt0/WjJWdVpYSnBZeTB4/TG1wd1p5SXNJbVZr/YVhSeklqcDdJbkps/YzJsNlpTSTZleUoz/YVdSMGFDSTZPREk0/ZlgxOQ",
-      "desc": "Description for Tomatoes"
+      "desc": "Description for Carrot"
     }
   ]
 }

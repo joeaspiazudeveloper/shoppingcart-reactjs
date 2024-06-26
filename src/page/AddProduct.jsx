@@ -67,7 +67,6 @@ function AddProduct() {
         formErrors["amount"] = "Please fill the amount / enter valid amount";
       }       
     }
-    console.log([formFields, formErrors]);
     setErrors(formErrors)
     return formIsValid;
   }
@@ -77,8 +76,8 @@ function AddProduct() {
     if(handleValidation()){
       let newProduct = {
         name: fields.name,
-        price: fields.price + 0,
-        amount: fields.amount + 0,
+        price: fields.price,
+        amount: fields.amount,
         id: products.items.length + 1,
         image: 'https://imgs.search.brave.com/evSRbcQAYXNmPczN41SHIQXnKknh6XsyxDF_7l2aXds/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5oc3dzdGF0aWMu/Y29tL2V5SmlkV05y/WlhRaU9pSmpiMjUw/Wlc1MExtaHpkM04w/WVhScFl5NWpiMjBp/TENKclpYa2lPaUpu/YVdaY0x6SmlkWGt0/WjJWdVpYSnBZeTB4/TG1wd1p5SXNJbVZr/YVhSeklqcDdJbkps/YzJsNlpTSTZleUoz/YVdSMGFDSTZPREk0/ZlgxOQ',
         desc: `Description for ${fields.name}`

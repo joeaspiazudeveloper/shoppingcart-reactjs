@@ -22,7 +22,7 @@ function App() {
           <Route path='/not-found' Component={NotFound} />
           <Route path='/cart' Component={Cart} />
           <Route path='/addProduct' Component={AddProduct} />
-          <Route path='/logictest' Component={LogicTest} />
+          <Route path='/logic-test' Component={LogicTest} />
           <Route path='/' Component={Home} />
           <Route path="*" element={<Navigate to ="/not-found" />}/>
         </Routes>

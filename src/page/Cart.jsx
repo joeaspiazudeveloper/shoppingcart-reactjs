@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart, clearCart, decreaseCart, getTotals, removeFromCart } from "../features/cartSlice";
-import { decreaseProductAmount, increaseProductAmount } from "../features/productsSlice";
+import { clearProducts, decreaseProductAmount, increaseProductAmount, productsFetch } from "../features/productsSlice";
 
 function Cart() {
   const cart = useSelector((state) => state.cart);
@@ -29,6 +29,8 @@ function Cart() {
 
   const handleClearCart = () => {
     dispatch(clearCart());
+    dispatch(productsFetch());
+    dispatch(clearProducts());
   }
   return (
     <div className="cart-container">

@@ -71,7 +71,7 @@ function Cart() {
                     <img src={cartItem.image} alt={cartItem.name} />
                     <div>
                       <div className="name-amount">
-                        <h3>{cartItem.name}</h3> <span>({cartItem.amount})</span>
+                        <h3>{cartItem.name}</h3>
                       </div> 
                       <p>{cartItem.desc}</p>
                       <button onClick={() => { handleRemoveFromCart(cartItem) }}>

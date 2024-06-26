@@ -391,6 +391,14 @@ $button-font-color: #2b2b2b;
   }
 }
 // Logic Test
+.logic-test-link {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  span {
+    color: white;
+  }
+}
 .logic-test-container {
   margin: 1rem;
   pre code {

@@ -25,17 +25,12 @@ const Home =() => {
       ) : (
         <>
           <div className="title-add">
-            <h2>New Products</h2>
+            <h2>Product List</h2>
             <Link to="/addProduct">
               <button>Add Product</button>
             </Link>
           </div>
-          <div className="products">
-            { products?.map((product) => (
-                <ProductList product={product}></ProductList>
-              ))
-            }
-          </div>
+          {products.length > 0 && <ProductList products={products}></ProductList>}
         </>
       )}
     </div>

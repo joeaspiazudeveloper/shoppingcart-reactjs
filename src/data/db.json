@@ -3,7 +3,7 @@
     {
       "name": "Milk",
       "price": 1.5,
-      "amount": 10,
+      "amount": 3,
       "id": 1,
       "image": "https://imgs.search.brave.com/M6u3m7J3bZymw167mdLJAzAFZ-O27sh3EqyczI_xxNg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MjM0NzM4Mjc1MzMt/MmE2NGQwZDM2NzQ4/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRGOGZH/MXBiR3Q4Wlc1OE1I/eDhNSHg4ZkRBPQ",
       "desc": "Description for milk"

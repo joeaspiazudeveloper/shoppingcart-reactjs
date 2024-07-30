@@ -7,14 +7,16 @@ const initialState = {
     status: null
 };
 
+const apiUrl = "https://backend-jsonserver-3r6l.onrender.com/products"
+
 const addProduct = async (product) => {
-    return await axios.post("http://localhost:3030/products", product);
+    return await axios.post(apiUrl, product);
 }
 
 export const productsFetch = createAsyncThunk(
     "products/productsFetch",
     async (id = null, {rejectWithValue}) => {
-        const response = await axios.get("http://localhost:3030/products");
+        const response = await axios.get(apiUrl);
         return response?.data;
     }
 )

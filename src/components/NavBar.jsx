@@ -5,7 +5,6 @@ function NavBar() {
   const { cartTotalQuantity } = useSelector((state) => state.cart);
   return (
     <>
-      <Link className="logic-test-link" to="/logic-test"><span>LT</span></Link>
       <nav className="nav-bar">
         <Link to="/">
           <h2>MyTiendita</h2>

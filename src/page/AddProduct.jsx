@@ -11,6 +11,7 @@ function AddProduct() {
   const navigate = useNavigate()
   const [fields, setFields] = useState({
     name: '',
+    image: '',
     price: 0,
     amount: 0,
   });
@@ -39,6 +40,19 @@ function AddProduct() {
       if(formFields["name"].match(/^[\\p{L} .'-]+$/)){
         formIsValid = false;
         formErrors["name"] = "Please fill the name / enter valid name";
+      }       
+    }
+
+     //Image
+     if(!formFields["image"]){
+      formIsValid = false;
+      formErrors["image"] = "Please fill the image";
+    }
+
+    if(typeof formFields["image"] !== "undefined"){
+      if(!isValidUrl(formFields["image"])) {
+        formIsValid = false;
+        formErrors["image"] = "Please fill the image / enter valid image";
       }       
     }
 
@@ -76,10 +90,10 @@ function AddProduct() {
     if(handleValidation()){
       let newProduct = {
         name: fields.name,
+        image: fields.image,
         price: fields.price,
         amount: fields.amount,
         id: products.items.length + 1,
-        image: 'https://imgs.search.brave.com/evSRbcQAYXNmPczN41SHIQXnKknh6XsyxDF_7l2aXds/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5oc3dzdGF0aWMu/Y29tL2V5SmlkV05y/WlhRaU9pSmpiMjUw/Wlc1MExtaHpkM04w/WVhScFl5NWpiMjBp/TENKclpYa2lPaUpu/YVdaY0x6SmlkWGt0/WjJWdVpYSnBZeTB4/TG1wd1p5SXNJbVZr/YVhSeklqcDdJbkps/YzJsNlpTSTZleUoz/YVdSMGFDSTZPREk0/ZlgxOQ',
         desc: `Description for ${fields.name}`
       }
       dispatch(createProduct(newProduct));
@@ -93,6 +107,14 @@ function AddProduct() {
     
     
   };
+
+  const isValidUrl = (url) => {
+    // Regular expression for URL validation
+    const urlRegex = /^(?:(?:https?|ftp):\/\/)?(?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)+[^\s]*$/i;
+    
+    // Test the given URL against the regex
+    return urlRegex.test(url);
+  }
   return (
     <div className="add-product-container">
       <h2>Add Product</h2>
@@ -103,11 +125,24 @@ function AddProduct() {
             type="text"
             name="name"
             value={fields.name}
-            placeholder="Enter your name"
+            placeholder="Enter the product name"
             onChange={handleInputChange}
           />
         </div>
         <div className='error-container'><span className="error">{errors["name"]}</span></div>
+
+        <div className="form-control">
+          <label>Image Url (link)</label>
+          <input
+            type="text"
+            name="image"
+            value={fields.image}
+            placeholder="Enter the image"
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className='error-container'><span className="error">{errors["image"]}</span></div>
+
 
         <div className="form-control">
           <label>Price</label>

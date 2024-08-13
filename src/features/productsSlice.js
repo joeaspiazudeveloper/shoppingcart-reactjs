@@ -6,8 +6,8 @@ const initialState = {
     items: [],
     status: null
 };
-
-const apiUrl = "https://backend-jsonserver-3r6l.onrender.com/products"
+const apiUrl = "https://crudapinodejs.onrender.com/api/products"
+// const apiUrl = "http://localhost:3000/api/products"
 
 const addProduct = async (product) => {
     return await axios.post(apiUrl, product);
